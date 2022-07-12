@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jj7-s5-3in">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switch StackedUI Image View Controller-->
+        <scene sceneID="AZL-dq-obk">
+            <objects>
+                <viewController id="Jj7-s5-3in" customClass="SwitchStackedUIImageViewController" customModule="PlayViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBO-ol-cf8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-KT-8zv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="1" green="0.14395219025117922" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-mg-7PX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9r-fM-dBS">
+                                <rect key="frame" x="149" y="569" width="121" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="ボタン"/>
+                                <connections>
+                                    <action selector="buttonTouch:" destination="Jj7-s5-3in" eventType="touchUpInside" id="AZs-Fw-uUV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xft-mG-tSY">
+                                <rect key="frame" x="149" y="238" width="121" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tjn-KT-8zv" firstAttribute="top" secondItem="aBO-ol-cf8" secondAttribute="top" id="9X7-dT-bMk"/>
+                            <constraint firstItem="tjn-KT-8zv" firstAttribute="leading" secondItem="9qY-mQ-LSw" secondAttribute="leading" id="Dkj-zw-VnN"/>
+                            <constraint firstItem="tjn-KT-8zv" firstAttribute="bottom" secondItem="aBO-ol-cf8" secondAttribute="bottom" id="Xef-o6-F59"/>
+                            <constraint firstItem="tjn-KT-8zv" firstAttribute="trailing" secondItem="9qY-mQ-LSw" secondAttribute="trailing" id="dSG-vJ-ktJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9qY-mQ-LSw"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageMaskView" destination="vE9-mg-7PX" id="ljK-Db-Vg2"/>
+                        <outlet property="redImageView" destination="tjn-KT-8zv" id="Fw6-J4-HlV"/>
+                        <outlet property="theButton" destination="O9r-fM-dBS" id="BPz-9I-Rj3"/>
+                        <outlet property="theLabel" destination="xft-mG-tSY" id="Ue1-i5-gJ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBi-pQ-GjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.00000000000003" y="126.99999999999999"/>
+        </scene>
+    </scenes>
+</document>

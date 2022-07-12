@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="PlayViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="aKi-ZE-H1k">
+                                <rect key="frame" x="105" y="94" width="204" height="213"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LY-e8-UPr">
+                                        <rect key="frame" x="0.0" y="0.0" width="204" height="30"/>
+                                        <state key="normal" title="Audio Type A with code"/>
+                                        <connections>
+                                            <action selector="moveToAudioTypeA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46d-EK-wmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c05-CD-4dP">
+                                        <rect key="frame" x="0.0" y="61" width="204" height="30"/>
+                                        <state key="normal" title="Audio Type A with Storyboard"/>
+                                        <connections>
+                                            <segue destination="AXe-xY-NxS" kind="show" id="aUI-Iv-u4E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUs-bT-fGZ">
+                                        <rect key="frame" x="0.0" y="122" width="204" height="30"/>
+                                        <state key="normal" title="Switch UIImageView test"/>
+                                        <connections>
+                                            <segue destination="U8e-s3-rWw" kind="show" id="VAA-gD-hJB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTA-41-okt">
+                                        <rect key="frame" x="0.0" y="183" width="204" height="30"/>
+                                        <state key="normal" title="Video Type A"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aKi-ZE-H1k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="4Ij-9E-0HN"/>
+                            <constraint firstItem="aKi-ZE-H1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j2Q-UV-Juh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--AudioTypeA-->
+        <scene sceneID="bsu-6f-Cm5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AudioTypeA" id="AXe-xY-NxS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sM-z2-aAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="-202"/>
+        </scene>
+        <!--SwitchStackedUIImageView-->
+        <scene sceneID="D5M-QZ-R1G">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SwitchStackedUIImageView" id="U8e-s3-rWw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb0-7f-XKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="27"/>
+        </scene>
+    </scenes>
+</document>
